@@ -135,57 +135,72 @@ class Coescreen extends StatelessWidget {
               ),
             ),
             //amenities
-            const SizedBox(
+            SizedBox(
               height: 120,
               width: 300,
-              child:Im
+              child: Center(child: Image.asset('assets/amenities.png')),
             ),
             SizedBox(
               height: 100,
               width: 300,
               child: Row(
                 children: [
-                  const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Price',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 13,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      Text(
-                        '\$199',
-                        style: TextStyle(
-                            color: Colors.green,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 25),
-                      ),
-                    ],
+                  const Padding(
+                    padding: EdgeInsets.only(left: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Price',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        Text(
+                          '\$199',
+                          style: TextStyle(
+                              color: Colors.green,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 25),
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(
-                    width: 50,
+                    width: 80,
                   ),
-                  ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor:
-                              const Color.fromARGB(255, 33, 33, 243)),
-                      child: Row(
-                        children: [
-                          Text(
-                            'Book now',
-                            style: GoogleFonts.montserrat(
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 50),
+                    child: SizedBox(
+                      height: 48,
+                      width: 200,
+                      child: ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor:
+                                const Color.fromARGB(255, 33, 33, 243),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Book now',
+                                style: GoogleFonts.montserrat(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600),
+                              ),
+                              const Icon(
+                                Icons.arrow_forward_ios,
                                 color: Colors.white,
-                                fontWeight: FontWeight.w600),
-                          ),
-                          const Icon(
-                            Icons.forward_rounded,
-                            color: Colors.white,
-                          ),
-                        ],
-                      ))
+                              ),
+                            ],
+                          )),
+                    ),
+                  )
                 ],
               ),
             ),
