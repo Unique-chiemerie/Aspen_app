@@ -70,6 +70,8 @@ flutter:
     - assets/coebig.png
     - assets/back.png
     - assets/amenities.png
+    - assets/coeS.jpg
+    - assets/homescreen.jpg
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

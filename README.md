@@ -1,16 +1,12 @@
 # aspen_app
 
-A new Flutter project.
+The ui screens of a lifestyle/luxury app.
 
-## Getting Started
+## Want to run/test the app?
 
-This project is a starting point for a Flutter application.
+install flutter on your code editor and run the flutter run command 
 
-A few resources to get you started if this is your first Flutter project:
+# UI screenshots
+![Homescreen]('assets/homescreen.jpg')
+![coeurdes screen](assets/coeS.jpg)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
