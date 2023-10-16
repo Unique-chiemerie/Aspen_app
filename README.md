@@ -7,6 +7,6 @@ The ui screens of a lifestyle/luxury app.
 install flutter on your code editor and run the flutter run command 
 
 # UI screenshots
-![Homescreen]('assets/homescreen.jpg')
+![Homescreen]('assets/home')
 ![coeurdes screen](assets/coeS.jpg)
 
