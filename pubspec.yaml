@@ -69,6 +69,7 @@ flutter:
     - assets/lux.png
     - assets/coebig.png
     - assets/back.png
+    - assets/amenities.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

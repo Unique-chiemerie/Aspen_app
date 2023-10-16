@@ -14,16 +14,24 @@ class Coescreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10),
               child: Stack(children: [
-                SizedBox(
-                  height: 350,
-                  width: 290,
-                  child: Image.asset('assets/coebig.png'),
+                Center(
+                  child: SizedBox(
+                    height: 350,
+                    width: 330,
+                    child: Image.asset('assets/coebig.png'),
+                  ),
                 ),
                 Positioned(
-                  child: SizedBox(
-                    height: 50,
-                    width: 50,
-                    child: Image.asset('assets/back.png'),
+                  left: 30,
+                  top: 30,
+                  child: InkWell(
+                    onTap: () => Navigator.pop(context),
+                    splashColor: const Color.fromARGB(255, 26, 72, 254),
+                    child: SizedBox(
+                      height: 50,
+                      width: 50,
+                      child: Image.asset('assets/back.png'),
+                    ),
                   ),
                 ),
               ]),
@@ -64,52 +72,73 @@ class Coescreen extends StatelessWidget {
                 ),
                 const Text(
                   '4.5(Reviews)',
-                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w500),
                 ),
               ],
             ),
             SizedBox(
-              height: 300,
+              height: 150,
               width: 280,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Aspen is as close as one can get to a storybook\n'
+                  const Padding(
+                    padding: EdgeInsets.only(
+                      left: 30,
+                    ),
+                    child: Text(
+                      '\nAspen is as close as one can get to a storybook\n'
                       'alpine town in America. The Choose-your-own\n'
                       'adventure possibilities--skiing,hiking,dining\n'
-                      'shopping and...'),
-                  TextButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(),
-                    child: const Row(
-                      children: [
-                        Text(
-                          'Read more',
-                          style: TextStyle(
+                      'shopping and...',
+                      style:
+                          TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25),
+                    child: TextButton(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(),
+                      child: const Row(
+                        children: [
+                          Text(
+                            'Read more',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 33, 68, 243),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                            ),
+                          ),
+                          Icon(
+                            Icons.expand_more_outlined,
                             color: Color.fromARGB(255, 33, 68, 243),
                           ),
-                        ),
-                        Icon(
-                          Icons.expand_more_outlined,
-                          color: Color.fromARGB(255, 33, 68, 243),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
-            Text(
-              'Facilities',
-              style: GoogleFonts.montserrat(
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black,
-                  fontSize: 25),
+            Padding(
+              padding: const EdgeInsets.only(left: 20),
+              child: Text(
+                'Facilities',
+                style: GoogleFonts.montserrat(
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black,
+                    fontSize: 25),
+              ),
             ),
+            //amenities
             const SizedBox(
               height: 120,
               width: 300,
-              child: Placeholder(),
+              child:Im
             ),
             SizedBox(
               height: 100,
@@ -134,6 +163,9 @@ class Coescreen extends StatelessWidget {
                             fontSize: 25),
                       ),
                     ],
+                  ),
+                  const SizedBox(
+                    width: 50,
                   ),
                   ElevatedButton(
                       onPressed: () {},
